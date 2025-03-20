@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versos ao Copo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Versos ao Copo" class="logo">
+        <h1>Bem-vindo ao Versos ao Copo!</h1>
+    </header>
+
+    <main>
+        <!-- Seção de Reservas -->
+        <section class="reservation">
+            <h2>Faça sua reserva</h2>
+            <form action="#">
+                <label for="tipo-reserva">Tipo de Reserva:</label>
+                <select id="tipo-reserva" name="tipo-reserva">
+                    <option value="interno">Mesa Interna</option>
+                    <option value="externo">Mesa Externa</option>
+                </select>
+
+                <label for="num-pessoas">Número de Pessoas:</label>
+                <select id="num-pessoas" name="num-pessoas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6+</option>
+                </select>
+
+                <label for="horario">Horário:</label>
+                <select id="horario" name="horario">
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <!-- Seção de Alérgenos -->
+        <section class="allergen-table">
+            <h2>Informe suas alergias</h2>
+            <form action="#">
+                <label for="gluten">Glúten:</label>
+                <input type="checkbox" id="gluten" name="alergenos" value="gluten">
+
+                <label for="lactose">Lactose:</label>
+                <input type="checkbox" id="lactose" name="alergenos" value="lactose">
+
+                <label for="outro">Outro (especificar):</label>
+                <input type="checkbox" id="outro" name="alergenos" value="outro">
+                <input type="text" id="outro-texto" name="outro-texto" placeholder="Especifique o alérgeno">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Seção de Questionário de Satisfação -->
+        <section class="questionario">
+            <h2>Questionário de Satisfação</h2>
+            <form action="#">
+                <label for="satisfacao">Como você avalia sua experiência?</label>
+                <select id="satisfacao" name="satisfacao">
+                    <option value="1">1 - Péssima</option>
+                    <option value="2">2 - Regular</option>
+                    <option value="3">3 - Boa</option>
+                    <option value="4">4 - Muito boa</option>
+                    <option value="5">5 - Excelente</option>
+                </select>
+
+                <label for="comentarios">Comentários:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe seus comentários..."></textarea>
+
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Versos ao Copo</p>
+    </footer>
+</body>
+</html>
