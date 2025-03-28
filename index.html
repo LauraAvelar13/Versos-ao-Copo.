@@ -20,7 +20,6 @@
                 <label for="tipo-reserva">Tipo de Reserva:</label>
                 <select id="tipo-reserva" name="tipo-reserva">
                     <option value="interno">Mesa Interna</option>
-                    <option value="externo">Mesa Externa</option>
                 </select>
 
                 <label for="num-pessoas">Número de Pessoas:</label>
@@ -30,15 +29,24 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
-                    <option value="6">6+</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
                 </select>
 
                 <label for="horario">Horário:</label>
                 <select id="horario" name="horario">
-                    <option value="18:00">18:00</option>
                     <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select>
+
+                <label for="menu-degustacao">Menu de Degustação:</label>
+                <select id="menu-degustacao" name="menu-degustacao">
+                    <option value="menu1">8 Cocktails de autor incluídos – 35€</option>
+                    <option value="menu2">5 Cocktails de autor – 29€</option>
+                    <option value="menu3">5 Bebidas (Cocktails de autor e Mocktails) – 25€</option>
+                    <option value="menu4">3 Mocktails e águas (menores de 18) – 10,50€</option>
                 </select>
 
                 <button type="submit">Reservar</button>
@@ -55,7 +63,7 @@
                 <label for="lactose">Lactose:</label>
                 <input type="checkbox" id="lactose" name="alergenos" value="lactose">
 
-                <label for="outro">Outro (especificar):</label>
+                <label for="outro">Outros (especificar):</label>
                 <input type="checkbox" id="outro" name="alergenos" value="outro">
                 <input type="text" id="outro-texto" name="outro-texto" placeholder="Especifique o alérgeno">
 
@@ -67,17 +75,25 @@
         <section class="questionario">
             <h2>Questionário de Satisfação</h2>
             <form action="#">
-                <label for="satisfacao">Como você avalia sua experiência?</label>
-                <select id="satisfacao" name="satisfacao">
-                    <option value="1">1 - Péssima</option>
-                    <option value="2">2 - Regular</option>
-                    <option value="3">3 - Boa</option>
-                    <option value="4">4 - Muito boa</option>
-                    <option value="5">5 - Excelente</option>
-                </select>
+                <label>1. Consegue descrever a sua experiência em três palavras?</label><br>
+                <input type="radio" name="experiencia" value="bom"> Bom<br>
+                <input type="radio" name="experiencia" value="unica"> Única<br>
+                <input type="radio" name="experiencia" value="divertida"> Divertida<br>
+                <input type="radio" name="experiencia" value="ma"> Má<br>
+                <input type="radio" name="experiencia" value="normal"> Normal<br>
+                <input type="radio" name="experiencia" value="entediante"> Entediante<br><br>
 
-                <label for="comentarios">Comentários:</label>
-                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe seus comentários..."></textarea>
+                <label>2. Recomendaria esta experiência a mais pessoas?</label><br>
+                <input type="radio" name="recomendacao" value="sim"> Sim<br>
+                <input type="radio" name="recomendacao" value="nao"> Não<br>
+                <input type="radio" name="recomendacao" value="naosei"> Não sei<br><br>
+
+                <label>3. Como você avalia o atendimento prestado pelos nossos funcionários?</label><br>
+                <input type="radio" name="atendimento" value="muito-bom"> Muito Bom<br>
+                <input type="radio" name="atendimento" value="bom"> Bom<br>
+                <input type="radio" name="atendimento" value="suficiente"> Suficiente<br>
+                <input type="radio" name="atendimento" value="mau"> Mau<br>
+                <input type="radio" name="atendimento" value="muito-mau"> Muito Mau<br><br>
 
                 <button type="submit">Enviar Feedback</button>
             </form>
