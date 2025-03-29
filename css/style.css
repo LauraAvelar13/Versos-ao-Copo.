@@ -36,6 +36,27 @@ form {
     background-color: #2e2e2e;
     padding: 20px;
     border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
 }
 
 button {
@@ -45,9 +66,15 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #5e1d1d;
 }
 
+#feedback {
+    text-align: center;
+    color: #5e1d1d;
+    margin-top: 20px;
+}
