@@ -87,3 +87,8 @@ textarea {
     flex-direction: column;
     gap: 10px;
 }
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
