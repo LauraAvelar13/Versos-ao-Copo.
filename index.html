@@ -3,36 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Versos ao Copo</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>Versos ao Copo</title>
 </head>
-
 <body>
-    <!-- Logotipo -->
-    <div class="logo-container">
-        <img src="images/Versos_ao_Copo_Transparente.png" alt="Versos ao Copo" width="200">
-    </div>
-</body>
-
-<body>
-
     <header>
-        <img src="images/logo.png" alt="Logo Versos ao Copo" class="logo">
-        <h1>Bem-vindo ao Versos ao Copo!</h1>
+        <div class="logo-container">
+            <img src="images/Versos_ao_Copo_Transparente.png" alt="Versos ao Copo" width="200">
+        </div>
+        <nav>
+            <a href="#reservas">Reservas</a>
+            <a href="questionario.html">Questionário de Satisfação</a>
+        </nav>
     </header>
 
     <main>
-        <!-- Seção de Reservas -->
-        <section class="reservation">
-            <h2>Faça sua reserva</h2>
-            <form action="#">
-                <label for="tipo-reserva">Tipo de Reserva:</label>
-                <select id="tipo-reserva" name="tipo-reserva">
-                    <option value="interno">Mesa Interna</option>
-                </select>
-
-                <label for="num-pessoas">Número de Pessoas:</label>
-                <select id="num-pessoas" name="num-pessoas">
+        <section id="reservas">
+            <h1>Reservas - Mesas Internas</h1>
+            <form action="#" method="POST">
+                <label for="numero-pessoas">Número de Pessoas:</label>
+                <select name="numero-pessoas" id="numero-pessoas">
+                    <option value="">Escolha...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -43,46 +34,32 @@
                     <option value="8">8</option>
                 </select>
 
+                <br><br>
+
                 <label for="horario">Horário:</label>
-                <select id="horario" name="horario">
+                <select name="horario" id="horario">
+                    <option value="">Escolha...</option>
                     <option value="19:00">19:00</option>
                     <option value="22:00">22:00</option>
                     <option value="23:00">23:00</option>
                 </select>
 
+                <br><br>
+
                 <label for="menu-degustacao">Menu de Degustação:</label>
-                <select id="menu-degustacao" name="menu-degustacao">
-                    <option value="menu1">8 Cocktails de autor incluídos – 35€</option>
-                    <option value="menu2">5 Cocktails de autor – 29€</option>
-                    <option value="menu3">5 Bebidas (Cocktails de autor e Mocktails) – 25€</option>
-                    <option value="menu4">3 Mocktails e águas (menores de 18) – 10,50€</option>
+                <select name="menu-degustacao" id="menu-degustacao">
+                    <option value="">Escolha...</option>
+                    <option value="1">8 Cocktails de Autor (35€)</option>
+                    <option value="2">5 Cocktails de Autor (29€)</option>
+                    <option value="3">5 Bebidas à Escolha (25€)</option>
+                    <option value="4">Menu Menores de 18 - 3 Mocktails e Águas (10,50€)</option>
                 </select>
+
+                <br><br>
 
                 <button type="submit">Reservar</button>
             </form>
         </section>
-
-        <!-- Seção de Alérgenos -->
-        <section class="allergen-table">
-            <h2>Informe suas alergias</h2>
-            <form action="#">
-                <label for="gluten">Glúten:</label>
-                <input type="checkbox" id="gluten" name="alergenos" value="gluten">
-
-                <label for="lactose">Lactose:</label>
-                <input type="checkbox" id="lactose" name="alergenos" value="lactose">
-
-                <label for="outro">Outros (especificar):</label>
-                <input type="checkbox" id="outro" name="alergenos" value="outro">
-                <input type="text" id="outro-texto" name="outro-texto" placeholder="Especifique o alérgeno">
-
-                <button type="submit">Enviar</button>
-            </form>
-
-        <a href="questionario.html">Questionário de Satisfação</a>
-
-    <footer>
-        <p>&copy; 2025 Versos ao Copo</p>
-    </footer>
+    </main>
 </body>
 </html>

@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Questionário de Satisfação - Versos ao Copo</title>
+    <title>Questionário de Satisfação</title>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="images/Versos_ao_Copo_Transparente.png" alt="Versos ao Copo" width="200">
-    </div>
-    
-    <h1>Questionário de Satisfação</h1>
-    <form action="#" method="POST">
-        <label>1. Consegue descrever a sua experiência em três palavras?</label><br>
-        <input type="checkbox"> Bom<br>
-        <input type="checkbox"> Única<br>
-        <input type="checkbox"> Divertida<br>
-        <input type="checkbox"> Má<br>
-        <input type="checkbox"> Normal<br>
-        <input type="checkbox"> Entediante<br><br>
+    <header>
+        <div class="logo-container">
+            <img src="images/Versos_ao_Copo_Transparente.png" alt="Versos ao Copo" width="200">
+        </div>
+        <nav>
+            <a href="index.html">Voltar para o Início</a>
+        </nav>
+    </header>
 
-        <label>2. Recomendaria esta experiência a mais pessoas?</label><br>
-        <input type="radio" name="recomendar" value="Sim"> Sim<br>
-        <input type="radio" name="recomendar" value="Não"> Não<br>
-        <input type="radio" name="recomendar" value="Não sei"> Não sei<br><br>
+    <main>
+        <h1>Questionário de Satisfação</h1>
+        <form action="#" method="POST">
+            <label>1. Consegue descrever a sua experiência em três palavras?</label><br>
+            <input type="checkbox"> Bom
+            <input type="checkbox"> Única
+            <input type="checkbox"> Divertida
+            <input type="checkbox"> Má
+            <input type="checkbox"> Normal
+            <input type="checkbox"> Entediante<br><br>
 
-        <label>3. Como você avalia o atendimento prestado pelos nossos funcionários?</label><br>
-        <select name="atendimento">
-            <option value="Muito Bom">Muito Bom</option>
-            <option value="Bom">Bom</option>
-            <option value="Suficiente">Suficiente</option>
-            <option value="Mau">Mau</option>
-            <option value="Muito Mau">Muito Mau</option>
-        </select><br><br>
+            <label>2. Recomendaria esta experiência a mais pessoas?</label><br>
+            <input type="radio" name="recomendar" value="Sim"> Sim
+            <input type="radio" name="recomendar" value="Não"> Não
+            <input type="radio" name="recomendar" value="Não sei"> Não sei<br><br>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <label>3. Como você avalia o atendimento prestado pelos nossos funcionários?</label><br>
+            <select name="atendimento">
+                <option value="Muito Bom">Muito Bom</option>
+                <option value="Bom">Bom</option>
+                <option value="Suficiente">Suficiente</option>
+                <option value="Mau">Mau</option>
+                <option value="Muito Mau">Muito Mau</option>
+            </select><br><br>
 
-    <br>
-    <a href="index.html">Voltar à Página Principal</a>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
 </body>
 </html>
