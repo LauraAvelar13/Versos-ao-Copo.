@@ -12,52 +12,55 @@
             <img src="images/Versos_ao_Copo_Transparente.png" alt="Versos ao Copo" width="200">
         </div>
         <nav>
+            <a href="#">Início</a>
             <a href="#reservas">Reservas</a>
+            <a href="#alergenios">Alérgenos</a>
             <a href="questionario.html">Questionário de Satisfação</a>
         </nav>
     </header>
 
     <main>
         <section id="reservas">
-            <h1>Reservas - Mesas Internas</h1>
+            <h1>Faça a sua Reserva</h1>
             <form action="#" method="POST">
-                <label for="numero-pessoas">Número de Pessoas:</label>
-                <select name="numero-pessoas" id="numero-pessoas">
-                    <option value="">Escolha...</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
+                <label for="tipoReserva">Tipo de Reserva:</label>
+                <select id="tipoReserva" name="tipoReserva">
+                    <option value="mesas_internas">Mesas Internas</option>
                 </select>
 
-                <br><br>
+                <label for="numeroPessoas">Número de Pessoas:</label>
+                <select id="numeroPessoas" name="numeroPessoas">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                </select>
 
                 <label for="horario">Horário:</label>
-                <select name="horario" id="horario">
-                    <option value="">Escolha...</option>
-                    <option value="19:00">19:00</option>
-                    <option value="22:00">22:00</option>
-                    <option value="23:00">23:00</option>
+                <select id="horario" name="horario">
+                    <option>19:00</option>
+                    <option>22:00</option>
+                    <option>23:00</option>
                 </select>
-
-                <br><br>
-
-                <label for="menu-degustacao">Menu de Degustação:</label>
-                <select name="menu-degustacao" id="menu-degustacao">
-                    <option value="">Escolha...</option>
-                    <option value="1">8 Cocktails de Autor (35€)</option>
-                    <option value="2">5 Cocktails de Autor (29€)</option>
-                    <option value="3">5 Bebidas à Escolha (25€)</option>
-                    <option value="4">Menu Menores de 18 - 3 Mocktails e Águas (10,50€)</option>
-                </select>
-
-                <br><br>
 
                 <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <section id="alergenios">
+            <h2>Alérgenos</h2>
+            <form>
+                <label><input type="checkbox" name="alergia" value="gluten"> Gluten</label><br>
+                <label><input type="checkbox" name="alergia" value="lactose"> Lactose</label><br>
+                <label><input type="checkbox" name="alergia" value="marisco"> Marisco</label><br>
+                <label><input type="checkbox" name="alergia" value="amendoim"> Amendoim</label><br>
+                <label><input type="checkbox" name="alergia" value="outro"> Outro</label>
+
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
