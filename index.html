@@ -23,10 +23,16 @@
         <section id="reservas">
             <h1>Faça a sua Reserva</h1>
             <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="contacto">Contacto:</label>
+                <input type="tel" id="contacto" name="contacto" required><br><br>
+
                 <label for="tipoReserva">Tipo de Reserva:</label>
                 <select id="tipoReserva" name="tipoReserva">
                     <option value="mesas_internas">Mesas Internas</option>
-                </select>
+                </select><br><br>
 
                 <label for="numeroPessoas">Número de Pessoas:</label>
                 <select id="numeroPessoas" name="numeroPessoas">
@@ -38,14 +44,14 @@
                     <option>6</option>
                     <option>7</option>
                     <option>8</option>
-                </select>
+                </select><br><br>
 
                 <label for="horario">Horário:</label>
                 <select id="horario" name="horario">
                     <option>19:00</option>
                     <option>22:00</option>
                     <option>23:00</option>
-                </select>
+                </select><br><br>
 
                 <button type="submit">Reservar</button>
             </form>
@@ -58,7 +64,7 @@
                 <label><input type="checkbox" name="alergia" value="lactose"> Lactose</label><br>
                 <label><input type="checkbox" name="alergia" value="marisco"> Marisco</label><br>
                 <label><input type="checkbox" name="alergia" value="amendoim"> Amendoim</label><br>
-                <label><input type="checkbox" name="alergia" value="outro"> Outro</label>
+                <label><input type="checkbox" name="alergia" value="outro"> Outro</label><br><br>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -66,3 +72,4 @@
     </main>
 </body>
 </html>
+
