@@ -9,64 +9,61 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/Versos_ao_Copo_Transparente.png" alt="Versos ao Copo" width="200">
+            <img src="img/logotipo.png" alt="Logotipo Versos ao Copo" width="150">
         </div>
         <nav>
-            <a href="#">Início</a>
-            <a href="#reservas">Reservas</a>
-            <a href="#alergenios">Alérgenos</a>
+            <a href="index.html">Início</a>
             <a href="questionario.html">Questionário de Satisfação</a>
         </nav>
     </header>
 
     <main>
         <section id="reservas">
-            <h1>Faça a sua Reserva</h1>
+            <h1>Reservas</h1>
             <form action="#" method="POST">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
+                <input type="text" id="nome" name="nome" required>
 
                 <label for="contacto">Contacto:</label>
-                <input type="tel" id="contacto" name="contacto" required><br><br>
+                <input type="text" id="contacto" name="contacto" required>
 
-                <label for="tipoReserva">Tipo de Reserva:</label>
-                <select id="tipoReserva" name="tipoReserva">
-                    <option value="mesas_internas">Mesas Internas</option>
-                </select><br><br>
+                <label for="numero">Número de Pessoas:</label>
+                <select id="numero" name="numero">
+                    <option value="">Escolha...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
 
-                <label for="numeroPessoas">Número de Pessoas:</label>
-                <select id="numeroPessoas" name="numeroPessoas">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                </select><br><br>
+                <label for="adultos">Número de Adultos:</label>
+                <input type="number" id="adultos" name="adultos" min="1" required>
+
+                <label for="menores">Número de Menores de 18:</label>
+                <input type="number" id="menores" name="menores" min="0" required>
 
                 <label for="horario">Horário:</label>
                 <select id="horario" name="horario">
-                    <option>19:00</option>
-                    <option>22:00</option>
-                    <option>23:00</option>
-                </select><br><br>
+                    <option value="">Escolha...</option>
+                    <option value="19:00">19:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select>
+
+                <label for="menu">Menu de Degustação:</label>
+                <select id="menu" name="menu">
+                    <option value="">Escolha...</option>
+                    <option value="1">1º Menu: 8 cocktails de autor incluídos – 35€</option>
+                    <option value="2">2º Menu: 5 cocktails de autor – 29€</option>
+                    <option value="3">3º Menu: 5 bebidas (cocktails e mocktails) – 25€</option>
+                    <option value="4">4º Menu: 3 mocktails e águas (menores de 18) – 10,50€</option>
+                </select>
 
                 <button type="submit">Reservar</button>
-            </form>
-        </section>
-
-        <section id="alergenios">
-            <h2>Alérgenos</h2>
-            <form>
-                <label><input type="checkbox" name="alergia" value="gluten"> Gluten</label><br>
-                <label><input type="checkbox" name="alergia" value="lactose"> Lactose</label><br>
-                <label><input type="checkbox" name="alergia" value="marisco"> Marisco</label><br>
-                <label><input type="checkbox" name="alergia" value="amendoim"> Amendoim</label><br>
-                <label><input type="checkbox" name="alergia" value="outro"> Outro</label><br><br>
-
-                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>

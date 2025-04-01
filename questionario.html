@@ -7,42 +7,45 @@
     <title>Questionário de Satisfação</title>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/Versos_ao_Copo_Transparente.png" alt="Versos ao Copo" width="200">
-        </div>
-        <nav>
-            <a href="index.html">Voltar para o Início</a>
-        </nav>
-    </header>
-
     <main>
-        <h1>Questionário de Satisfação</h1>
-        <form action="#" method="POST">
-            <label>1. Consegue descrever a sua experiência em três palavras?</label><br>
-            <input type="checkbox"> Bom
-            <input type="checkbox"> Única
-            <input type="checkbox"> Divertida
-            <input type="checkbox"> Má
-            <input type="checkbox"> Normal
-            <input type="checkbox"> Entediante<br><br>
+        <section id="questionario">
+            <h1>Questionário de Satisfação</h1>
+            <form action="#" method="POST">
+                <div>
+                    <label class="question-label">1. Consegue descrever a sua experiência em três palavras?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="experiencia" value="bom"> Bom</label>
+                        <label><input type="checkbox" name="experiencia" value="unica"> Única</label>
+                        <label><input type="checkbox" name="experiencia" value="divertida"> Divertida</label>
+                        <label><input type="checkbox" name="experiencia" value="ma"> Má</label>
+                        <label><input type="checkbox" name="experiencia" value="normal"> Normal</label>
+                        <label><input type="checkbox" name="experiencia" value="entediante"> Entediante</label>
+                    </div>
+                </div><br>
 
-            <label>2. Recomendaria esta experiência a mais pessoas?</label><br>
-            <input type="radio" name="recomendar" value="Sim"> Sim
-            <input type="radio" name="recomendar" value="Não"> Não
-            <input type="radio" name="recomendar" value="Não sei"> Não sei<br><br>
+                <div>
+                    <label class="question-label">2. Recomendaria esta experiência a mais pessoas?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="recomendaria" value="sim"> Sim</label>
+                        <label><input type="checkbox" name="recomendaria" value="nao"> Não</label>
+                        <label><input type="checkbox" name="recomendaria" value="nao sei"> Não Sei</label>
+                    </div>
+                </div><br>
 
-            <label>3. Como você avalia o atendimento prestado pelos nossos funcionários?</label><br>
-            <select name="atendimento">
-                <option value="Muito Bom">Muito Bom</option>
-                <option value="Bom">Bom</option>
-                <option value="Suficiente">Suficiente</option>
-                <option value="Mau">Mau</option>
-                <option value="Muito Mau">Muito Mau</option>
-            </select><br><br>
+                <div>
+                    <label class="question-label">3. Como você avalia o atendimento prestado pelos nossos funcionários?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="avaliacao" value="muito bom"> Muito Bom</label>
+                        <label><input type="checkbox" name="avaliacao" value="bom"> Bom</label>
+                        <label><input type="checkbox" name="avaliacao" value="suficiente"> Suficiente</label>
+                        <label><input type="checkbox" name="avaliacao" value="mau"> Mau</label>
+                        <label><input type="checkbox" name="avaliacao" value="muito mau"> Muito Mau</label>
+                    </div>
+                </div><br>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>
